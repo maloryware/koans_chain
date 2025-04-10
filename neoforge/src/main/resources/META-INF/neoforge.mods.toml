@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "MIT License"
+
+[[mods]]
+modId = "koans_chain"
+version = "${version}"
+displayName = "Chain of Unmatched Drip"
+authors = "maloryware"
+description = '''
+For chain modeller Koan Azaky. Free of charge, full of love.
+'''
+#logoFile = ""
+
+[[dependencies.koans_chain]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.koans_chain]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.koans_chain]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "koans_chain.mixins.json"
